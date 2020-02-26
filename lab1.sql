@@ -109,7 +109,7 @@ FROM employees
 WHERE (job_id LIKE '%clerk%' OR job_id LIKE '%rep%')
     AND salary NOT IN(1000, 2000, 3000);
 
--23
+--23
 SELECT first_name, last_name, salary, comission_pct
 FROM employees
 WHERE salary > salary * comission_pct * 5;
